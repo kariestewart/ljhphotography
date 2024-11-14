@@ -26,21 +26,25 @@
              </nav>
     </header>
 
-<div class="container">
+<div class="session-container">
+    <div class="form-container">
 <h2>Session Inquiry</h2>
-<p>Please fill out the following and submit your inquiry below.</p>
+<div class="inquiry">
+    <p>Please fill out and submit the form below for session inquiries.</p>
+</div>
 <form method="post" action="">
-First Name: <input type="text" name="Name" size="40"/>     
-<br/>
-<br/>
-Last Name: <input type="text" name="Name" size="40"/>
-<br/>
-<br/>
-Email: <input type="text" name="Email" size="40"/>     
-<br/>
-<br/>
-Phone Number: <input type="text" name="Phone" size="40"/>
-<br/>
+    <label for="first-name">First Name:</label>
+    <input type="text" id="first-name" name="firstName" size="40" required />
+    <br/><br/>
+    <label for="last-name">Last Name:</label>
+    <input type="text" id="last-name" name="lastName" size="40" required />
+    <br/><br/>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" size="40" required />
+    <br/><br/>
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" size="40" />
+    <br/>
 <br/>
 <p>What Type Of Session Are You Looking For?</p>
 <select name="SessionType">
@@ -67,6 +71,7 @@ Phone Number: <input type="text" name="Phone" size="40"/>
 <input type="submit"/>      
 <input type="reset"/>  
 </form>
+</div>
 </div>
 </body>
 </html>
